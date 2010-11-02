@@ -1,0 +1,24 @@
+apps:
+  staging: myapp-staging
+  production: myapp
+
+development: &defaults
+  admins: 'joe sue'
+  domain_url: http://localhost:3000
+  twitter_key: key
+  twitter_secret: secret
+
+test:
+  <<: *defaults
+
+staging:
+  admins: 'joe sue'
+  domain_url: http://myapp-staging.heroku.com
+  twitter_key: key
+  twitter_secret: secret
+
+production:
+  admins: 'joe sue'
+  domain_url: http://myapp.heroku.com
+  twitter_key: key
+  twitter_secret: secret
