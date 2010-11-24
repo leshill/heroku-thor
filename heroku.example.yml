@@ -5,6 +5,7 @@ apps:
 development: &defaults
   admins: 'joe sue'
   domain_url: http://localhost:3000
+  invites: 100
   twitter_key: key
   twitter_secret: secret
 
@@ -14,11 +15,13 @@ test:
 staging:
   admins: 'joe sue'
   domain_url: http://myapp-staging.heroku.com
+  invites: 100
   twitter_key: key
   twitter_secret: secret
 
 production:
   admins: 'joe sue'
   domain_url: http://myapp.heroku.com
+  invites: 10
   twitter_key: key
   twitter_secret: secret
